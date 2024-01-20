@@ -137,7 +137,7 @@ There is also an original note for your birthday I had made at the same time whe
 Hey there Atlas!<br>
 Happy birthday!<br>
 I really hope you enjoyed the little demo thing I did over here.<br>
-I know you would probably didnt expect something like this for your birthday, but, this was the best I could think of haha.<br>
+I know you probably didnt expect something like this for your birthday, but, this was the best I could think of haha.<br>
 Regardless, the effort that went into this gift is completely deserved.<br>
 You have been going through some harsh times as of late, and I wanted you to know that you will eventually make it through.<br>
 Even in the harshest of times, there will always be a time to smile and to be happy, and I hope right now is one of those times.<br>
