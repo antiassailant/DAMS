@@ -129,7 +129,7 @@ var dialogueObjects = {
     "19,81": "A sign that reads the following:<br>CARGO AREA LWING",
     "22,81": "A sign that reads the following:<br>CAFETARIA AREA",
     "30,76": "A spilled liquid that seems to have not dried has been detected on the floor. The liquid is in the item database:<br>SAVORY APPETITE UNLOADING SUSTENANCE.<br>SAUS.",
-    "23,151": `You find a crumpled paper.`,
+    "23,151": `You find a crumpled paper with unintelligable writing.`,
     // # ELEMENTS
     "18,78": "",
     "21,11": "",
@@ -137,10 +137,6 @@ var dialogueObjects = {
 }
 
 document.addEventListener("keydown", function(event) {
-    if (musicPlaying == false) {
-        musicPlaying = true;
-    }
-    document.getElementById("bgm").play();
     switch(event.key) {
         case "ArrowLeft":
             movePlayer("left", map1);
