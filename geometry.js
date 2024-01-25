@@ -129,26 +129,7 @@ var dialogueObjects = {
     "19,81": "A sign that reads the following:<br>CARGO AREA LWING",
     "22,81": "A sign that reads the following:<br>CAFETARIA AREA",
     "30,76": "A spilled liquid that seems to have not dried has been detected on the floor. The liquid is in the item database:<br>SAVORY APPETITE UNLOADING SUSTENANCE.<br>SAUS.",
-    "23,151": `Hi there Atlas! If you are wondering what the hell this is, this was supposed to be your birthday present, but I couldn't make it in time for your birthday.<br>
-But, I thought I could do a good job at recovering it and getting it to work to some extent, and I think I did!<br>
-Although it was made for your birthday, I thought that it wouldn't matter what day I picked to gift this to you. A gift is gift, hah. <br>
-There is also an original note for your birthday I had made at the same time when I started this that would have been revealed the same way. So the next paragraph or two is going to be that note. Happy late-birthday!<br>
----------------------------------------------------------------------------------<br>
-Hey there Atlas!<br>
-Happy birthday!<br>
-I really hope you enjoyed the little demo thing I did over here.<br>
-I know you probably didnt expect something like this for your birthday, but, this was the best I could think of haha.<br>
-Regardless, the effort that went into this gift is completely deserved.<br>
-You have been going through some harsh times as of late, and I wanted you to know that you will eventually make it through.<br>
-Even in the harshest of times, there will always be a time to smile and to be happy, and I hope right now is one of those times.<br>
-When I was facing off against those terrible people, only you were the one right beside me.<br>
-When I was in pain, barely able to talk, thinking about terrible things, only you were the one right beside me.<br>
-And I will never be able to repay that, regardless of how hard I try.<br>
-Thank you for being here Atlas.<br>
-Thank you.<br>
-I love you.<br>
-- Hellbie <3
-    `,
+    "23,151": `You find a crumpled paper.`,
     // # ELEMENTS
     "18,78": "",
     "21,11": "",
