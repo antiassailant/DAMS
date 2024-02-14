@@ -118,7 +118,7 @@
         }
 
         #separator1 {
-            margin-left: 50px;
+            margin-left: 80px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -130,14 +130,19 @@
             padding: 10px;
             border: 1px solid white;
             box-shadow: 0px 0px 3px white;
+            background: repeating-linear-gradient(180deg, rgba(255, 255, 255, 0.1), transparent 0.3px);
             cursor: pointer;
             text-align: center;
             text-transform: uppercase;
+            animation-name: bgmove;
+            animation-timing-function: linear;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
         }
 
         .menuoption:hover {
             color: black;
-            background-color: white;
+            background: repeating-linear-gradient(180deg, rgba(255, 255, 255, 0.9), transparent 0.3px);
         }
     </style>
 </head>
@@ -156,16 +161,17 @@
     transition: 2s linear;
 "><span id="sbuttont" onclick="controller()">START</span></div>
     <audio src="sounds/startseq.wav" id="startaudio"></audio>
+    <audio src="sounds/menu.mp3" id="bgm" loop></audio>
     <div id="stage1" style="display: none;">
 
     </div>
     <div id="stage2" style="display: none">
         <div id="logo"></div>
     </div>
-    <div id="stage3" style="transition: opacity 3.5s ease-out;">
-
+    <div id="stage3" style="transition: opacity 7.5s ease-out;">
         <div id="separator">
             <div id="separator1">
+                <div id="logoc" style="background:url(assets/logoc.png);height: 150px;background-position: center;background-size: contain;background-repeat: no-repeat;transform: scale(1.5);"></div>
                 <span data-tilt="">
                     <div class="menuoption">New Game</div>
                 </span><span data-tilt="">
@@ -212,14 +218,11 @@
                 document.getElementById("stage3").style.visibility = "visible";
                 document.getElementById("stage3").style.opacity = "1";
             }, 20808);
+            setTimeout(function () {
+                console.log("CLICK");
+                document.getElementById("bgm").play();
+            }, 23808);
         }
-
-        document.onkeypress = function (e) {
-            e = e || window.event;
-            if (e.keyCode == 53) {
-                controller();
-            }
-        };
     </script>
 </body>
 
