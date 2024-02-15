@@ -73,6 +73,7 @@ function killWindow(wid) {
 
 function createWindow(title, width, height, wid, bodytext = "") {
     if (windowZindexArr.length > 0) {
+        playsound('deny');
         return;
     }
 
@@ -126,6 +127,7 @@ function createWindow(title, width, height, wid, bodytext = "") {
 
 function qCreate(title, id, bodytext="") {
     if (windowZindexArr.length > 0) {
+        playsound('deny');
         return;
     }
     var wind = createWindow(title, 500, 500, id, bodytext);
@@ -134,6 +136,13 @@ function qCreate(title, id, bodytext="") {
 }
 
 var currentId = 0;
+
+// playsound
+
+function playsound(soundid) {
+    var p = new Audio("assets/sfx/" + soundid + ".mp3");
+    p.play();
+}
 
 // window prompts
 
