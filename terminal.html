@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Linefont:wght@4..1000&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: perfectDOS;
+            src: url(assets/fonts/PerfectDOS.ttf);
+        }
+
+        body {
+            background: radial-gradient(rgb(20, 20, 20), black);
+            color: white;
+            font-family: perfectDOS;
+            filter: url(#barrel);
+            overflow: hidden;
+        }
+
+        *::selection {
+            background-color: white;
+            color: black;
+        }
+
+        body::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: repeating-linear-gradient(180deg, black, transparent 2px);
+            background-position-y: 0px;
+            animation-name: bgmove;
+            animation-timing-function: linear;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+        }
+
+        .signal {
+            font-family: "Linefont";
+            filter: none;
+            text-shadow: none;
+            user-select: none;
+            width: fit-content;
+        }
+
+        #terminal {
+            font-family: "perfectDOS";
+            z-index: 2;
+            position: absolute;
+        }
+    
+        #terminal p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="terminal">
+        <p>VRF\041\ADMIN\DAMS>radiorec</p>
+        <div>
+            <p>RADIOREC - SIGNAL HEAP</p>
+            <p>HEAP 1 (NORTH):</p>
+            <div class="signal">4678831560152563000059273890258499940013169912619280200000</div>
+            <p>HEAP 2 (SOUTH):</p>
+            <div class="signal">872271775963542300007092025631355379000081741980637909750000</div>
+            <p>HEAP 3 (EAST):</p>
+            <div class="signal">770109908155164100008555770036151134000040194767376841600000</div>
+            <p>HEAP 4 (WEST):</p>
+            <div class="signal">796417172068137400001957848812914417700069035366609105390000</div>
+        </div>
+        <p>VRF\041\ADMIN\DAMS>probe north</p>
+        <div>
+            <p>HEAP 1 (NORTH):</p>
+            <div class="signal">4678831560152563000059273890258499940013169912619280200000</div>
+        </div>
+    </div>
+</body>
+</html>

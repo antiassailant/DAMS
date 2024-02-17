@@ -147,6 +147,6 @@ function playsound(soundid) {
 // window prompts
 
 var credits = `<div>DAMS Version 0.0</div><div style="text-align:center;"><div id="logoc" style="background:url(assets/images/logoc.png);height: 120px;background-position: center;background-size: contain;background-repeat: no-repeat;"></div><br><br>Made by antiassailant and NavyEOD_24.</div>`;
-var options = `<div class="window-body"><div style="user-select:none;">Barrel Filter Scale:</div>
-<input type="range" min="1" max="100" value="0" class="slider" oninput="document.getElementById('despMap').scale.baseVal = this.value;" id="myRange">
-</div><div>Warning, the barrel filter WILL not affect bounding boxes. This means that sometimes when you click an element, it wont respond.</div>`;
+function option() { return `<div class="window-body"><div style="user-select:none;">Barrel Filter Scale:</div>
+<input type="range" min="1" max="100" value="` + optionsDict["barrelSlider"] + `" class="slider" oninput="document.getElementById('despMap').scale.baseVal = this.value; optionsDict['barrelSlider'] = this.value; resOpt();" id="myRange">
+</div><div>Warning, the barrel filter WILL not affect bounding boxes. This means that sometimes when you click an element, it wont respond.</div>`;}

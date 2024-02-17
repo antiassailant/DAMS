@@ -51,7 +51,7 @@
                         onclick="playsound('accept');qCreate('Load Game', 0)">Load Game</div>
                 </span><span data-tilt="">
                     <div class="menuoption" onmouseover="playsound('hover')"
-                        onclick="playsound('accept');qCreate('Options', 0, options)">Options</div>
+                        onclick="playsound('accept');qCreate('Options', 0, option())">Options</div>
                 </span><span data-tilt="">
                     <div class="menuoption" onmouseover="playsound('hover')"
                         onclick="playsound('accept');qCreate('Credits', 0, credits)">Credits</div>
@@ -101,6 +101,7 @@
                 garbage(document.getElementById("sbutton"));
                 garbage(document.getElementById("stage1"));
                 garbage(document.getElementById("stage2"));
+                garbage(document.getElementById("controllerf"));
                 console.log("CLICK");
                 document.getElementById("bgm").play();
                 dispose();
@@ -122,9 +123,11 @@
             garbage(document.getElementById("sbutton"));
             garbage(document.getElementById("stage1"));
             garbage(document.getElementById("stage2"));
+            garbage(document.getElementById("controllerf"));
             dispose();
         }
     </script>
+    <script src="assets/js/options.js"></script>
     <script src="assets/js/window.js"></script>
     <script src="assets/js/garbage.js"></script>
 </body>
